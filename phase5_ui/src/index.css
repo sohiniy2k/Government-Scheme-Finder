@@ -1,0 +1,83 @@
+/* Global CSS styles and Theme variables */
+
+:root {
+  --font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Dark Theme (Default) */
+  --bg-gradient: linear-gradient(135deg, #5B1A86 0%, #C2187A 50%, #F06BA8 100%);
+  --card-bg: rgba(40, 10, 60, 0.58);
+  --card-border: rgba(255, 255, 255, 0.18);
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  --card-radius: 20px;
+  --blur-amount: 16px;
+  
+  --accent-yellow: #F5D90A;
+  --accent-yellow-hover: #FFE84D;
+  --accent-yellow-text: #2A0A3A;
+  --accent-magenta: #FF2DAA;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-border: rgba(255, 255, 255, 0.25);
+  --input-color: #FFFFFF;
+  
+  --badge-bg: rgba(255, 45, 170, 0.2);
+  --badge-border: #FF2DAA;
+  --badge-text: #FF66C4;
+}
+
+[data-theme="light"] {
+  --bg-gradient: linear-gradient(135deg, #FBE4F0 0%, #F6C6DE 100%);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(91, 26, 134, 0.15);
+  --card-shadow: 0 8px 24px 0 rgba(194, 24, 122, 0.15);
+  
+  --text-primary: #2A0A3A;
+  --text-secondary: rgba(42, 10, 58, 0.8);
+  --text-muted: rgba(42, 10, 58, 0.55);
+  
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --input-border: rgba(91, 26, 134, 0.25);
+  --input-color: #2A0A3A;
+  
+  --badge-bg: rgba(255, 45, 170, 0.15);
+  --badge-border: #C2187A;
+  --badge-text: #960D5B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Accessible focus outlines */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--accent-magenta);
+  outline-offset: 2px;
+}

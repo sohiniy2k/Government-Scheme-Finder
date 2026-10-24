@@ -49,3 +49,8 @@ out/
 *~
 .DS_Store
 Thumbs.db
+.pytest_cache/
+
+# Data
+data/raw/
+
